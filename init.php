@@ -34,7 +34,8 @@ class Guest extends \atk4\data\Model
             ]);
         $this->addField('age',['required'=>true]);
         $this->addField('gender',['enum'=>['boy','girl']]);
-        $this->addField('units_of_drink');
+        $this->addField('cash');
+        $this->addField('present');
     }
 }
 
@@ -44,7 +45,7 @@ class Dashboard extends \atk4\ui\View
     function setModel($m) {
         $model = parent::setModel($m);
         $this->template['guests'] = $model->action('count')->getOne();
-        $this->template['drinks'] = $model->action('fx',['sum','units_of_drink'])->getOne();
+        $this->template['drinks'] = $model->action('fx',['sum','cash'])->getOne();
         return $model;
     }
 }
