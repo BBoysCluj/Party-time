@@ -1,0 +1,10 @@
+{
+    "require": {
+        "atk4/data": "*",
+        "atk4/ui": "^1.7"
+      },
+    
+      "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+      }
+}
