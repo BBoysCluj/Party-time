@@ -17,8 +17,7 @@ class App extends atk4\ui\App
         $this->initLayout('Centered');
     }
     //$this->dbConnect('mysql://root:Lims!234@localhost/atk4');
-    $this->dbConnect(isset($_ENV['CLEARDB_DATABASE_URL'])?$_ENV['CLEARDB_DATABASE_URL']:
-    'mysql://root:Lims!234@localhost/atk4');
+    $this->dbConnect(isset($_ENV['CLEARDB_DATABASE_URL'])? $_ENV['CLEARDB_DATABASE_URL']:'mysql://root:Lims!234@localhost/atk4');
 }
 }
 
