@@ -3,7 +3,7 @@
         "atk4/data": "*",
         "atk4/ui": "^1.7",
         "psy/psysh": "^0.7.2"
-      },
+              },
       "autoload": {
         "psr-4": {
             "": "src/"
